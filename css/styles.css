@@ -455,6 +455,52 @@ ul {
   fill: var(--white-color);
 }
 
+/*----------MODAL-WINDOW-----------*/
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  transition: opacity 450ms, visibility 450ms;
+}
+.backdrop.is-hidden .modal {
+  transform: scale(0.25) skew(45deg);
+}
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--white-color);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) skew(0deg) translate(-50%, -50%);
+  transition: transform 400ms;
+}
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-cross {
+  fill: var(--logo-black-color);
+  cursor: pointer;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 /*------PORTFOLIO-NAVIGATION-------*/
 .btn-list {
   display: flex;
