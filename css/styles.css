@@ -258,6 +258,25 @@ ul {
 .project-img:not(:last-child) {
   margin-right: 30px;
 }
+.project-img-wrap {
+  position: relative;
+}
+.project-imgtext {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 24px 0;
+  width: 100%;
+}
+
 /*------TEAM-------*/
 .section-team {
   background-color: var(--team-background);
